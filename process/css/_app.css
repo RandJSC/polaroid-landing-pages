@@ -22,7 +22,7 @@
     font-size: 1.125em;
     font-family: 'UniversLTPro-55Roman', arial, helvetica, sans-serif;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-top: 0;
   }
   li {
     font-size: 1em;
@@ -36,18 +36,31 @@
   span.nobr {
     white-space: nowrap;
   }
+  .content-container {
+    padding: 1.6em 6%;
+  }
 }
-#info {
-  padding: 2.6em 1.2em;
-  text-align: center;
-  
-  .info-inner {
-    max-width: 460px;
+
+@media only screen and (min-width: 660px) {
+  .indent {
+    width: 82%;
     margin: 0 auto;
   }
 }
-#stats {
-  padding: 2.6em 1.2em;
+
+#info {
+  padding: 0;
+
+
+  h3 {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+
+}
+#stats .content-container {
+  /*padding: 2.6em 1.2em;*/
   text-align: center;
   display: flex;
   justify-content: center;
@@ -90,35 +103,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
   }
   
 }
-.features {
-  column-count: 2;
-}
-.features li {
-  margin-left: 30px;
-}
-.featuring-inner {
-  max-width: 600px;
-  margin: 0 auto;
-}
+
 #colors {
-  padding: 1em 0;
+  padding: 0 1em;
+  background: url("http://cdn.agilitycms.com/polaroid/landing-pages/pop/Polaroid-Pop-footer-background.jpg");
+  background-size: cover;
   border-bottom: 1px solid lightgray;
-  display: flex;
-  align-items: center;
-  flex-flow: row wrap;
-  justify-content: center;
+  display: block;
+  color: white;
   
-  h2 {
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+  .colors-right {
+      padding: 1.6em 0;
+  }
+
+  p {
+    padding-top: 1.4em;
   }
   
-  .col.left {
-    flex: 1 1 50%;
-    float: left;
-    padding: 0 1.5em;
+  @media only screen and (min-width: 660px) {
+    .colors-right {
+      padding: 1.6em 10% 1.6em 0;
+    }
+    .col.left {
+      flex: 0 0 50%;
+      float: left;
+      padding: 0 1.5em;
+      align-self: stretch;
+      background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: left;
+    }
   }
   
+
+  
+  
+}
+
+@media only screen and (min-width: 660px) {
+  #colors {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  p {
+    padding-top: 0;
+  }
 }
 
 #cta {
@@ -142,7 +174,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
 }
 @media only screen and (max-width: 660px) {
   .touch {
-    font-size: .9em;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 550px) {
