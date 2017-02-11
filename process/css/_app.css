@@ -113,28 +113,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
   color: white;
   
   .colors-right {
-      padding: 1.6em 0;
+      padding: 0;
   }
 
   p {
     padding-top: 1.4em;
   }
-  
+  .sub-wrap {
+    margin-bottom: 1em;
+  }
+
+  .col.left {
+    align-self: stretch;
+    /*background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);*/
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    /*background-position-x: left;*/
+    background: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
+    background-position: center center;
+    background-size: cover;
+  }
+  @media only screen and (max-width: 659px) {
+    .col.left {
+      height: 350px;
+      height: 71vw;
+    }
+  }
   @media only screen and (min-width: 660px) {
     .colors-right {
-      padding: 1.6em 10% 1.6em 0;
+      padding: 0;
     }
     .col.left {
       flex: 0 0 50%;
       float: left;
       padding: 0 1.5em;
       align-self: stretch;
-      background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
-      background-size: cover;
+      /*background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);*/
+      /*background-size: cover;*/
       background-repeat: no-repeat;
-      background-position-x: left;
+      /*background-position-x: left;*/
+      background: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
+      background-position: center center;
+      background-size: cover;
+      max-width: 450px;
     }
   }
+  
   
 
   
@@ -147,6 +171,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
     align-items: center;
     flex-flow: row nowrap;
     justify-content: center;
+    height: 360px;
+    height: 40vw;
+    max-height: 360px;
   }
   p {
     padding-top: 0;
@@ -174,7 +201,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
 }
 @media only screen and (max-width: 660px) {
   .touch {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 @media only screen and (max-width: 550px) {
