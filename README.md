@@ -4,7 +4,7 @@
 
 Responsive Single Page Design Workflow with PostCSS and Gulp. 
 
-- [My Personal Website](http://ckschmieder.com)
+- [R&J Website](http://randjsc.com)
 
 ## Description
 
