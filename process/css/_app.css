@@ -68,7 +68,7 @@
   flex-flow: row wrap;
   
   .card {
-    max-width: 260px;
+    max-width: 220px;
     flex: 1 0 200px;
     margin: 0 auto;
   }
