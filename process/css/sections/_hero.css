@@ -1,0 +1,38 @@
+#hero {
+    .hero.inner {
+      // max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+    .top {
+      border-bottom: 1px solid lightgray;
+      padding: .2em 1em;
+      width: 80%;
+      max-width: 500px;
+      margin: 0 auto;
+      
+      .polaroid-logo {
+        max-width: 433px;
+        margin: 0 auto;
+        
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    
+    .top h1 {
+      display: none;
+    }
+    .bottom {
+      
+    }
+    .bottom h2 {
+      text-align: center;
+      color: #F1574A;
+      margin: 0 0 1em;
+      padding: .5em 0;
+      font-weight: normal;
+    }
+  }

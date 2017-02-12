@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -47,4 +48,10 @@ em {
   font-weight: $font-weight-heavy;
   font-size: 140%;
   font-style: normal;
+}
+
+.touch .content-container {
+  width: 92%;
+  margin: 0 auto;
+  padding: 1.2em 0;
 }
