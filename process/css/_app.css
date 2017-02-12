@@ -35,6 +35,7 @@
   }
   span.nobr {
     white-space: nowrap;
+    line-height: initial;
   }
   .content-container {
     padding: 1.6em 6%;
@@ -43,7 +44,7 @@
 
 @media only screen and (min-width: 660px) {
   .indent {
-    width: 82%;
+    width: 98%;
     margin: 0 auto;
   }
 }
@@ -63,27 +64,17 @@
   /*padding: 2.6em 1.2em;*/
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row wrap;
   
   .card {
-    max-width: 200px;
-    flex: 1 1 200px;
+    max-width: 260px;
+    flex: 1 0 200px;
+    margin: 0 auto;
   }
   
 }
-.gradient-border {
-  width: 100%;
-  height: 5px;
-  padding: 0!important;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7941d+0,ffc52f+100 */
-background: rgb(247,148,29); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(247,148,29,1) 0%, rgba(255,197,47,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(247,148,29,1) 0%,rgba(255,197,47,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(247,148,29,1) 0%,rgba(255,197,47,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', endColorstr='#ffc52f',GradientType=1 ); /* IE6-9 */
 
-}
 /* #stats::after {
   width: 100%;
   position: relative;
@@ -93,7 +84,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
   display: block;
   background-color: green;
 } */
-#featuring {
+
+/*#featuring {
   
   padding: 2.6em 1.2em; 
   
@@ -102,7 +94,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7941d', end
     text-transform: uppercase;
   }
   
+}*/
+
+/*--------------------------------------------------------------
+## Features
+--------------------------------------------------------------*/
+#features {
+  .content-container {
+      display: block;
+  }
+  .border-bg {
+      flex: 0 0 32%;
+      max-width: 320px;
+      margin: 0 auto 1.5em;
+  }
+  .features-left {
+      flex: 0 0 64%;
+  }
+  .features-left ul {
+      padding-left: 1.2em;
+      list-style-position: outside;
+  }
+
+  @media only screen and (min-width: 780px) {
+    .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .border-bg {
+      margin: 0;
+    }
+  }
 }
+/*--------------------------------------------------------------
+## CTA (#colors)
+--------------------------------------------------------------*/
 
 #colors {
   padding: 0 1em;
