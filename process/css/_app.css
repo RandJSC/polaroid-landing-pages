@@ -4,30 +4,38 @@
   border-left: 1px solid gray;
   margin: 0 auto;
   font-size: 16px;
-  font-size: 1em;
+  font-size: 1rem;
   
   h2, h3 {
     margin-top: 0;
   }
   
   h2 {
-    font-size: 2em;
-    font-family: 'MuseoSans-700', arial, helvetica, sans-serif;
+    font-family: "MuseoSans-500", arial, helvetica, sans-serif;
+    font-size: 1.625em; /* 26px */
+    font-weight: 500;
+    color: #2B7BB9;
   }
   h3 {
-    font-size: 1.75em;
-    font-family: 'MuseoSans-500', arial, helvetica, sans-serif;
+    font-family: "MuseoSans-500", arial, helvetica, sans-serif;
+    font-size: 1.375em; /* 22px */
+    font-weight: 500;
+    color: #2B7BB9;
   }
   p {
-    font-size: 1.125em;
     font-family: 'UniversLTPro-55Roman', arial, helvetica, sans-serif;
-    line-height: 1.5;
+    font-size: 1em;
+    color: #4D4D4D;
+    line-height: 1.5625em;
     margin-top: 0;
+  }
+  ul {
+    margin: 1em 0 1.6em;
   }
   li {
     font-size: 1em;
     font-family: 'UniversLTPro-55Roman', arial, helvetica, sans-serif;
-    line-height: 1.5;
+    line-height: 1.6875em;
   }
   
   img {
@@ -38,7 +46,8 @@
     line-height: initial;
   }
   .content-container {
-    padding: 1.6em 6%;
+    padding: 1.5em 6% .5em;
+    height: auto;
   }
 }
 
@@ -53,7 +62,7 @@
   padding: 0;
 
 
-  h3 {
+  h2 {
     text-align: center;
     margin-top: 1em;
   }
@@ -68,7 +77,7 @@
   flex-flow: row wrap;
   
   .card {
-    max-width: 220px;
+    max-width: 210px;
     flex: 1 0 200px;
     margin: 0 auto;
   }
@@ -104,12 +113,12 @@
       display: block;
   }
   .border-bg {
-      flex: 0 0 32%;
-      max-width: 320px;
+      flex: 0 0 30%;
+      max-width: 260px;
       margin: 0 auto 1.5em;
   }
   .features-left {
-      flex: 0 0 64%;
+      flex: 0 0 66%;
   }
   .features-left ul {
       padding-left: 1.2em;
@@ -136,7 +145,6 @@
   padding: 0 1em;
   background: url("http://cdn.agilitycms.com/polaroid/landing-pages/pop/Polaroid-Pop-footer-background.jpg");
   background-size: cover;
-  border-bottom: 1px solid lightgray;
   display: block;
   color: white;
   
@@ -145,36 +153,21 @@
   }
 
   p {
-    padding-top: 1.4em;
+    font-family: 'MuseoSans-500',arial,helvetica,sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 1.25em;
+    margin-bottom: 1.8em;
+
   }
   .sub-wrap {
     margin-bottom: 1em;
   }
 
-  .col.left {
-    align-self: stretch;
-    /*background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);*/
-    /*background-size: cover;*/
-    background-repeat: no-repeat;
-    /*background-position-x: left;*/
-    background: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
-    background-position: center center;
-    background-size: cover;
-  }
-  @media only screen and (max-width: 659px) {
-    .col.left {
-      height: 350px;
-      height: 71vw;
-    }
-  }
-  @media only screen and (min-width: 660px) {
-    .colors-right {
-      padding: 0;
-    }
-    .col.left {
+
+  .colors-left {
       flex: 0 0 50%;
-      float: left;
-      padding: 0 1.5em;
+      padding: 0;
       align-self: stretch;
       /*background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);*/
       /*background-size: cover;*/
@@ -183,8 +176,73 @@
       background: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/polaroidpop_02.png);
       background-position: center center;
       background-size: cover;
-      max-width: 450px;
+      
+  }
+  .colors-right {
+    display: flex;
+    padding: 1.5em 0;
+    background-color: white;
+    color: inherit;
+    margin-left: -1em;
+    margin-right: -1em;
+    overflow: hidden;
+  }
+  .sub-wrap a {
+    border-radius: .4em;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2b7bb9;
+    padding: .465em .6em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: MuseoSans-500,arial,helvetica,sans-serif;
+    line-height: 1;
+    transition: all .3s ease;
+  }
+  .sub-wrap a:hover {
+    background-color: white;
+    color: #2b7bb9;
+    border: 2px solid #0f5e9a;
+  }
+  @media only screen and (max-width: 659px) {
+    .colors-left {
+      height: 350px;
+      height: 71vw;
     }
+    .text-info {
+      max-width: 90%;
+      margin: 0 auto;
+      
+
+      p {
+        color: #4D4D4D;
+      }
+    }
+  }
+  @media only screen and (min-width: 660px) {
+    .colors-right {
+      padding: 0;
+      flex: 1;
+      background-color: inherit;
+    }
+    .colors-left {
+      float: left;
+      display: flex;
+      max-width: 480px;
+    }
+    .colors-right {
+      display: flex;
+      padding: 1.5em 0;
+      background-color: inherit;
+      color: inherit;
+      margin-left: -1em;
+      margin-right: -1em;
+      overflow: hidden;
+    }
+    .text-info {
+      max-width: 340px;
+    }
+    
   }
   
   
@@ -227,34 +285,45 @@
     margin-bottom: 2.5em;
   }
 }
-@media only screen and (max-width: 660px) {
+
+#last {
+    padding-top: 5%;
+    background-image: url(http://cdn.agilitycms.com/polaroid/landing-pages/pop/PolaroidPop_03-resized-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    background-position: center 1.8em;
+    /* margin-top: 2em; */
+
+    img {
+      display: none;
+    }
+}
+
+
+@media only screen and (min-width: 661px) {
   .touch {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
-@media only screen and (max-width: 550px) {
-  .features {
-    column-count: 1;
-  }
-  .features li {
-    margin-left: inherit;
+@media only screen and (max-width: 660px) {
+  .touch {
+    font-size: .95rem;
   }
 }
 @media only screen and (max-width: 490px) {
   .touch {
-    font-size: .8em;
+    font-size: .9rem;
   }
 }
 @media only screen and (max-width: 340px) {
   .touch {
-    font-size: .75em;
+    font-size: .9rem;
   }
   .features {
     padding-left: 2em;  
   }
 }
 @media only screen and (max-width: 654px) {
-  .touch #colors h2 {
-    text-align: center;
-  }
+  
 }
