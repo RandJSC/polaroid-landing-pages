@@ -77,33 +77,12 @@
   flex-flow: row wrap;
   
   .card {
-    max-width: 210px;
-    flex: 1 0 200px;
+    max-width: 250px;
+    flex: 1 0 250px;
     margin: 0 auto;
   }
   
 }
-
-/* #stats::after {
-  width: 100%;
-  position: relative;
-  margin: 0 -1.2em;
-  height: 20px;
-  content: "";
-  display: block;
-  background-color: green;
-} */
-
-/*#featuring {
-  
-  padding: 2.6em 1.2em; 
-  
-  h3 {
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-}*/
 
 /*--------------------------------------------------------------
 ## Features
@@ -157,7 +136,7 @@
     font-weight: normal;
     color: white;
     font-size: 1.25em;
-    margin-bottom: 1.8em;
+    margin-bottom: 1.2em;
 
   }
   .sub-wrap {
@@ -204,6 +183,9 @@
     color: #2b7bb9;
     border: 2px solid #0f5e9a;
   }
+  /*.fa-send:before, .fa-paper-plane:before {
+    content: "\f1d8";
+  }*/
   @media only screen and (max-width: 659px) {
     .colors-left {
       height: 350px;
@@ -212,11 +194,23 @@
     .text-info {
       max-width: 90%;
       margin: 0 auto;
-      
 
       p {
         color: #4D4D4D;
       }
+
+    .sub-wrap {
+        width: 100%;
+        flex: 1;
+        display: flex;
+     }
+     .sub-wrap a {
+      width: 100%;
+      flex: 1;
+      font-size: 1.5em;
+      text-align: center;
+      padding: .9em .6em;
+     }
     }
   }
   @media only screen and (min-width: 660px) {
@@ -245,10 +239,6 @@
     
   }
   
-  
-
-  
-  
 }
 
 @media only screen and (min-width: 660px) {
@@ -263,26 +253,6 @@
   }
   p {
     padding-top: 0;
-  }
-}
-
-#cta {
-  
-  // height: 7em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  .btn {
-    background-color: #F15B4E;
-    font-family: 'UniversLTPro-55Roman', arial, helvetica, sans-serif;
-    color: white;
-    font-size: 1.625em;
-    text-decoration: none;
-    padding: .6em 1.6em;
-    border-radius: 5px;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
   }
 }
 
@@ -308,12 +278,12 @@
 }
 @media only screen and (max-width: 660px) {
   .touch {
-    font-size: .95rem;
+    font-size: 1.05rem;
   }
 }
 @media only screen and (max-width: 490px) {
   .touch {
-    font-size: .9rem;
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 340px) {
