@@ -298,3 +298,105 @@
 @media only screen and (max-width: 654px) {
   
 }
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#form {
+  display: none;
+  width: 100%!important;
+  max-width: 600px!important;
+  margin: 0 auto !important;
+  padding: 1.2em;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%)!important;
+}
+
+#mc_embed_signup form {
+  width: 100%;
+  padding: 3% 6% !important;
+}
+
+#mc_embed_signup .mc-field-group.input-group input {
+  margin-bottom: inherit;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul {
+  padding: 15px 0;
+}
+
+#button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: .6em .8em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 60ms ease-in-out;
+  transition: all 60ms ease-in-out;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
+
+    border-radius: .4em;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2b7bb9;
+    padding: .55em .6em .4em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: MuseoSans-500,arial,helvetica,sans-serif;
+    line-height: 1;
+    transition: all .3s ease;
+}
+#button:hover {
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+  background-color: white;
+  color: #2b7bb9;
+  border: 2px solid #0f5e9a;
+}
+#button:active {
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+  opacity: .75;
+}
+#button:focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+}
+#mc_embed_signup input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    vertical-align: initial;
+}
+.checkboxes-list {
+  padding-left: 0!important;
+}
