@@ -3,3 +3,4 @@ node_modules
 .tmp
 npm-debug.log
 builds/postcss/css/style.css
+images/dev/*
