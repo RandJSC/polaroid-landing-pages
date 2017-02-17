@@ -1,61 +1,100 @@
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+.touch {
+	box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.touch *,
+.touch *::before,
+.touch *::after {
+		box-sizing: inherit!important;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: $color-main;
-  background-color: $color-background;
-  font-family: $font-main;
-  font-size: 1.8rem;
-  line-height: 160%;
-  font-weight: $font-weight-normal;
+.touch {
+
+	
+		/*margin: 0;
+		padding: 0;
+		color: $color-main;
+		background-color: $color-background;
+		font-family: $font-main;
+		font-size: 1.8rem;
+		line-height: 160%;
+		font-weight: $font-weight-normal;*/
+
+
+	/*.container {
+		width: $container-default-width;
+		max-width: $container-max-width;
+		margin: 0 auto;
+	}*/
+
+	/*h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+		padding: 0;
+		font-family: $font-main;
+	}*/
+
+	img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/*a {
+		font-weight: $font-weight-heavy;
+	}*/
+
+	/*a:hover, a:focus {
+		text-decoration: none;
+	}*/
+
+	
+	.content-container {
+		width: 92%;
+		margin: 0 auto;
+		padding: 1.2em 0;
+	}
+
+	.gold {
+		color: $goldyellow;
+	}
+	.purp {
+		color: $lightpurple;
+	}
+
 }
 
-.container {
-  width: $container-default-width;
-  max-width: $container-max-width;
-  margin: 0 auto;
-}
+/*
+Responsive Typography
+----------------------*/
 
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-  padding: 0;
-  font-family: $font-main;
+@media only screen and (max-width: 660px) {
+	.touch {
+		font-size: .9em;
+	}
 }
-
-img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+@media only screen and (max-width: 550px) {
+	.features {
+		column-count: 1;
+	}
+	.features li {
+		margin-left: inherit;
+	}
 }
-
-a {
-  font-weight: $font-weight-heavy;
+@media only screen and (max-width: 490px) {
+	.touch {
+		font-size: .8em;
+	}
 }
-
-a:hover, a:focus {
-  text-decoration: none;
+@media only screen and (max-width: 340px) {
+	.touch {
+		font-size: .75em;
+	}
+	.features {
+		padding-left: 2em;  
+	}
 }
-
-em {
-  font-weight: $font-weight-heavy;
-  font-size: 140%;
-  font-style: normal;
-}
-
-.touch .content-container {
-  width: 92%;
-  margin: 0 auto;
-  padding: 1.2em 0;
-}
-
-.gold {
-  color: $goldyellow;
+@media only screen and (max-width: 654px) {
+	.touch #colors h2 {
+		text-align: center;
+	}
 }
