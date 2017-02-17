@@ -154,22 +154,39 @@ Banner seperates top and buttom section
 }
 
 .banner-printers.pens {
-	background: url('http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-background.jpg');
-	background-size: cover;
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-background.jpg);
+	background-size: 900px auto;
 	background-repeat: no-repeat;
-	background-position: center left;
-	padding: 1em 0;
+	background-position: top left;
+	overflow: hidden;
+	position: relative;
+	height: 250px;
 
 	.flex-wrap {
-		justify-content: flex-end;
-		align-items: center;
+		display: block;
+		width: 100%;
+		max-width: 900px;
+		overflow: hidden;
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
 	}
 	
 	.headline {
 		align-self: flex-start;
+		padding: 0 0 1.5em;
+	    position: absolute;
+	    top: 4%;
+	    right: 28%;
+	    text-align: center;
 	}
 	.pen-blue {
-		max-width: 170px;
+		max-width: 150px;
+		padding-top: .5em;
+		margin-left: auto; 
+		position: absolute;
+    	bottom: 10%;
+    	right: 0;
 
 	}
 }
