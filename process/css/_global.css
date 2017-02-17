@@ -12,6 +12,14 @@ body {
 		box-sizing: inherit!important;
 }
 
+.touch a {
+	color: $goldyellow;
+	text-decoration: none;
+}
+.touch a:hover {
+	text-decoration: underline;
+}
+
 .touch {
 
 	

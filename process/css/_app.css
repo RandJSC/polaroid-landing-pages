@@ -104,7 +104,7 @@
 
 @media only screen and (min-width: 680px) {
 	.flex-wrap .text-col {
-		width: calc(89% - 315px);
+		width: calc(92% - 315px);
 	}
 }
 
@@ -125,17 +125,19 @@
 		flex-direction: row-reverse;
 }
 
-/* Banner seperates top and buttom section */
+/* 
+Banner seperates top and buttom section 
+----------------------------------------*/
 
 .banner-printers {
 	background: url('http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-printers-header-background-opt.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-bottom: 3em;
 
 	.flex-wrap {
 		justify-content: space-between;
 		align-items: center;
-		padding: 2em 0;
 	}
 	
 	.printers-wrap {
@@ -150,11 +152,36 @@
 	}
 
 }
+
+.banner-printers.pens {
+	background: url('http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding: 1em 0;
+
+	.flex-wrap {
+		justify-content: flex-end;
+		align-items: center;
+	}
+	
+	.headline {
+		align-self: flex-start;
+	}
+	.pen-blue {
+		max-width: 170px;
+
+	}
+}
+
+
+
 .banner-printers .headline {
     color: white;
     font-size: 2.7em;
     font-family: MuseoSans-500,arial,helvetica,sans-serif;
     text-align: center;
+    padding: .3em 0;
 }
 
 

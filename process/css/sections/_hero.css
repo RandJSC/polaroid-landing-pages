@@ -5,6 +5,7 @@
 		font-weight: normal;
     font-family: MuseoSans-500,arial,helvetica,sans-serif;
     margin: .275em 0;
+    vertical-align: text-top;
 	}
 
 	h1 span.text-logo {
