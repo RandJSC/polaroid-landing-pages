@@ -9,17 +9,20 @@
 
 	
 	
-	h2, h3 {
-		margin-top: 0;
+	h1, h2, h3 {
+		line-height: 1.1;
 	}
 	
 	h2 {
 		font-size: 2em;
 		font-family: 'MuseoSans-700', arial, helvetica, sans-serif;
+		margin-top: 0;
 	}
 	h3 {
-		font-size: 1.75em;
-		font-family: 'MuseoSans-500', arial, helvetica, sans-serif;
+		font-size: 1.375em;
+		font-family: 'MuseoSans-700', arial, helvetica, sans-serif;
+		margin-top: 0;
+		font-weight: normal;
 	}
 	p {
 		font-size: 1.125em;
@@ -54,22 +57,32 @@
 
 }
 
+
+.touch .locations {
+	margin: 0 -1.2em;
+}
+
+.touch .locations > div {
+	padding: 0 1.2em;
+}
+
+
 @media only screen and (min-width: 420px) and (max-width: 619px) {
-	.locations-wrap {
+	
+	.locations {
 		display: flex;
 		flex-wrap: nowrap;
-		justify-content: space-between;
 		max-width: 500px;
-
-		/*.uk {
-			margin-right: 4em;
-		}*/
-
-		.country {
-			flex: 0 0 48%;
-		}
+		justify-content: flex-start;
+		/*margin: 0 -1em;*/
 	}
+
+	/*.locations > div {
+		padding: 0 1em;
+	}*/
+
 }
+
 
 @media only screen and (min-width: 620px) {
 	.flex-wrap {
@@ -97,15 +110,12 @@
 }
 
 @media only screen and (min-width: 820px) {
-	.locations-wrap {
+	.locations {
 		display: flex;
 		flex-wrap: nowrap;
-		justify-content: space-between;
-
-		.country {
-			flex: 0 0 45%;
-		}
+		justify-content: flex-start;
 	}
+	
 } 
 
 #bottom .flex-wrap {

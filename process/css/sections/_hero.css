@@ -1,19 +1,26 @@
 .touch {
+
 	h1 {
 		font-size: 2.72rem;
 		font-weight: normal;
     font-family: MuseoSans-500,arial,helvetica,sans-serif;
     margin: .275em 0;
 	}
+
 	h1 span.text-logo {
 		font-family: MuseoSans-500,arial,helvetica,sans-serif;
 		font-weight: bold;
+		white-space: nowrap;
+	}
+	h1 div {
+		display: inline-block;
 	}
 }
 
 
 #hero {
 
+	padding: 4em 0 1.6em;
 	text-align: center;
 
 	.text-logo:before {
@@ -25,6 +32,7 @@
 			max-width: 640px;
 			margin: 0 auto;
 			padding-bottom: 0;
+			width: 94%;
 		}
 		.top {
 			border-bottom: 1px solid lightgray;
