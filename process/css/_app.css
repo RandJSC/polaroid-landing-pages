@@ -1,10 +1,11 @@
+
 .touch {
-	max-width: 900px;
+	/*max-width: 900px;*/
 	border-right: 1px solid gray;
 	border-left: 1px solid gray;
 	margin: 0 auto;
 	font-size: 16px;
-	font-size: 1em;
+	font-size: 1rem;
 	
 	h2, h3 {
 		margin-top: 0;
@@ -40,19 +41,35 @@
 }
 
 .flex-wrap {
+	max-width: 750px;
+	margin: 0 auto;
+	width: 94%;
+
+	
+	.text-col > p:first-child {
+		color: $darkpurple;
+	}
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+.flex-wrap {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 
 	.images-col {
-		flex: 0 0 42%;
+		max-width: 315px;
 	}
 	.text-col {
-		flex : 0 0 52%;
+		width: calc(93% - 315px);
 	}
-	.text-col > p:first-child {
-		color: $darkpurple;
-	}
+
+}
+
+
 
 }
 

@@ -25,10 +25,7 @@
     .top h1 {
       display: none;
     }
-    .bottom {
-      
-    }
-    .bottom h2 {
+    .sub-hero h2 {
       text-align: center;
       color: #F1574A;
       margin: 0 0 1em;
