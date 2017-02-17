@@ -6,6 +6,8 @@
 	margin: 0 auto;
 	font-size: 16px;
 	font-size: 1rem;
+
+	
 	
 	h2, h3 {
 		margin-top: 0;
@@ -52,41 +54,59 @@
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 420px) and (max-width: 619px) {
+	.locations-wrap {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		max-width: 500px;
 
+		/*.uk {
+			margin-right: 4em;
+		}*/
 
-.flex-wrap {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-
-	.images-col {
-		max-width: 315px;
+		.country {
+			flex: 0 0 48%;
+		}
 	}
-	.text-col {
-		width: calc(93% - 315px);
-	}
-
 }
 
+@media only screen and (min-width: 620px) {
+	.flex-wrap {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
 
+		.images-col {
+			max-width: 315px;
+		}
+		.text-col {
+			width: calc(96% - 315px);
+		}
+	}
+}
 
+@media only screen and (min-width: 680px) {
+	.flex-wrap .text-col {
+		width: calc(93% - 315px);
+	}
 }
 
 .images-col .img-box {
 	margin-bottom: 1.8em;
 }
 
-.locations-wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
+@media only screen and (min-width: 820px) {
+	.locations-wrap {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 
-	.country {
-		flex: 0 0 40%;
+		.country {
+			flex: 0 0 45%;
+		}
 	}
-}
-
+} 
 
 #bottom .flex-wrap {
 		flex-direction: row-reverse;
