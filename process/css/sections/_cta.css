@@ -1,3 +1,5 @@
+.touch {
+
 section#cta {
     padding-bottom: 4em;
     position: relative;
@@ -5,20 +7,32 @@ section#cta {
 
 .subscribe-ribon {
     background-color: $lightpurple;
-    border-top: 7px solid $darkpurple;
-    border-bottom: 7px solid $darkpurple;
+    border-top: 10px solid $darkpurple;
+    border-bottom: 10px solid $darkpurple;
     position: relative;
-    min-height: 60px;
+    min-height: 80px;
+    box-shadow: 0px 2px 10px 0px #8c8c8c;
+}
+
+p.cta {
+    font-size: 1.375em;
+    color: $goldyellow;
+    font-family: 'MuseoSans-700', arial, helvetica, sans-serif;
+    font-weight: normal;
+    margin-bottom: 2em;
+    max-width: 405px;
+    margin: 0 auto 2.5em;
 }
 
 div#subscribe-btn {
     background-color: white;
-    max-width: 140px;
-    width: 140px;
+    max-width: 190px;
+    width: 190px;
     text-align: center;
-    height: 140px;
-    border-radius: 130px;
-    border: 7px solid $darkpurple;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid $darkpurple;
     position: absolute;
     right: 50%;
     top: 50%;
@@ -26,8 +40,32 @@ div#subscribe-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 4px 14px 0px #8c8c8c;
 }
+    div#subscribe-btn a {
+        font-size: 1.375em;
+        color: $goldyellow;
+        font-family: MuseoSans-700,arial,helvetica,sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        max-height: 170px;
+        border-radius: 50%;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        line-height: 1.1;
+        text-align:center;
+        transition: all .15s ease;
+    }
+    #subscribe-btn a:hover {
+       box-shadow: inset 0 0 16px 4px #d3d3d3;
+    }
 
 .subscribe-ribon-outter {
     position: relative;
+}
+
 }
