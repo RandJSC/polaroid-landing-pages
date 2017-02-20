@@ -62,7 +62,7 @@
 
 
 .touch .locations {
-	margin: 0 -1.2em;
+	margin: 0 0 0-1.2em;
 }
 
 .touch .locations > div {
@@ -236,7 +236,7 @@ Banner seperates top and buttom section
 	background: url('http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-printers-header-background-opt.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-bottom: 3em;
+	margin-bottom: 6%;
 
 	.flex-wrap {
 		justify-content: space-between;
@@ -262,6 +262,9 @@ Banner seperates top and buttom section
 
 }
 
+
+
+
 .banner-printers.pens {
 	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-background.jpg);
 	background-size: 900px auto;
@@ -277,22 +280,22 @@ Banner seperates top and buttom section
 		max-width: 900px;
 		overflow: hidden;
 		position: absolute;
-	    top: 0;
-	    bottom: 0;
+	  top: 0;
+	  bottom: 0;
 	}
 	
 	.headline {
 		align-self: flex-start;
-		padding: 0 0 1.5em;
-	    position: absolute;
-	    top: 12%;
-	    right: 28%;
-	    text-align: center;
+		padding: 0;
+		position: absolute;
+		top: 10%;
+		right: 28%;
+		text-align: center;
 	}
 	.pen-blue {
 		max-width: 145px;
 		position: absolute;
-    	bottom: 8%;
+    	bottom: 6%;
     	right: 0;
 	}
 	@media only screen and (max-width: 419px) {
@@ -308,6 +311,19 @@ Banner seperates top and buttom section
 
 }
 
+@media only screen and (max-width: 619px) {
+
+	.banner-printers {
+		height: 240px!important;
+	}
+	.banner-printers.pens {
+		background-position: 0 0;
+	}
+	.banner-printers .headline {
+		top: 6%!important;
+	}
+
+}
 
 
 
