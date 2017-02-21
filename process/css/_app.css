@@ -1,13 +1,8 @@
 
 .touch {
-	/*max-width: 900px;*/
-	border-right: 1px solid gray;
-	border-left: 1px solid gray;
 	margin: 0 auto;
 	font-size: 16px;
 	font-size: 1rem;
-
-	
 	
 	h1, h2, h3 {
 		line-height: 1.1;
@@ -232,10 +227,6 @@ Banner seperates top and buttom section
 
 }
 
-
-
-
-
 .banner-printers .headline {
     color: white;
     font-size: 2.7em;
@@ -243,16 +234,3 @@ Banner seperates top and buttom section
     text-align: center;
     padding: .3em 0;
 }
-
-
-/* CTA ribbon at the bottom */
-#cta {
-	margin-bottom: 4em;
-	text-align: center;
-	color: $goldyellow;
-
-	a {
-		color: $goldyellow;
-	}
-}
-

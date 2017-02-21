@@ -1,8 +1,16 @@
 .touch {
 
-section#cta {
+/* CTA ribbon at the bottom */
+#cta {
     padding-bottom: 4em;
     position: relative;
+    margin-bottom: 4em;
+    text-align: center;
+    color: $goldyellow;
+
+    a {
+        color: $goldyellow;
+    }
 }
 
 .subscribe-ribon {
