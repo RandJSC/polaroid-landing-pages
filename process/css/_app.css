@@ -60,13 +60,12 @@
 
 }
 
-
 .touch .locations {
 	margin: 0 0 0-1.2em;
 }
 
 .touch .locations > div {
-	padding: 0 1.2em;
+	padding: 0 .8em 0 1.2em;
 }
 
 
@@ -79,10 +78,6 @@
 		justify-content: flex-start;
 		/*margin: 0 -1em;*/
 	}
-
-	/*.locations > div {
-		padding: 0 1em;
-	}*/
 
 }
 
@@ -126,7 +121,7 @@
 }
 
 
-
+/*
 .img-box {
   position:relative;
   box-shadow:0 1px 4px rgba(0,0,0,.1), 0 0 40px rgba(0,0,0,.05) inset;
@@ -140,93 +135,7 @@
 .banner-printers .img-box,
 .banner-printers .img-box::after {
 	box-shadow: none;
-}
-
-.carnival {
-  position:relative;
-}
-.carnival::before, .carnival::after {
-  position:absolute; bottom:15px; top:80%; left:10px; z-index:-1; width:50%; max-width:300px;
-  background:rgba(0,0,0,.8);
-  content:""; box-shadow:0 15px 10px rgba(0,0,0,.7); transform: rotate(-3deg);
-}
-.carnival::after {
-  right:10px; left:auto;
-  transform: rotate(3deg);
-}
-
-.studying
-{
-  position: relative;
-}
-.studying:before, .studying:after
-{
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.studying:after
-{
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-
-.desk-mess {
-  position: relative;
-}
-.desk-mess:before, .desk-mess:after
-{
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 25px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 35px 20px #777;
-  -moz-box-shadow: 0 35px 20px #777;
-  box-shadow: 0 35px 20px #777;
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  -o-transform: rotate(-8deg);
-  -ms-transform: rotate(-8deg);
-  transform: rotate(-8deg);
-}
-.desk-mess:after
-{
-  -webkit-transform: rotate(8deg);
-  -moz-transform: rotate(8deg);
-  -o-transform: rotate(8deg);
-  -ms-transform: rotate(8deg);
-  transform: rotate(8deg);
-  right: 10px;
-  left: auto;
-}
-
-.grow {transition: all .2s ease-in-out;}
-.grow:hover {transform: scale(1.3); 
-                   z-index: 10;}
+}*/
 
 /* 
 Banner seperates top and buttom section 
@@ -261,8 +170,6 @@ Banner seperates top and buttom section
 	}
 
 }
-
-
 
 
 .banner-printers.pens {
