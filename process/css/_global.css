@@ -18,48 +18,24 @@ body {
 }
 .touch a:hover {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .touch {
 
-	
-		/*margin: 0;
-		padding: 0;
-		color: $color-main;
-		background-color: $color-background;
-		font-family: $font-main;
-		font-size: 1.8rem;
-		line-height: 160%;
-		font-weight: $font-weight-normal;*/
-
-
-	/*.container {
-		width: $container-default-width;
-		max-width: $container-max-width;
-		margin: 0 auto;
-	}*/
-
-	/*h1,h2,h3,h4,h5,h6 {
-		margin: 0;
-		padding: 0;
-		font-family: $font-main;
-	}*/
 
 	img {
 		display: block;
 		width: 100%;
 		max-width: 100%;
+		pointer-events: none;
+	    user-select: none;
+	    -moz-user-select: none;
+	    -khtml-user-select: none;
+	    -webkit-user-select: none;
+	    -o-user-select: none;
 	}
 
-	/*a {
-		font-weight: $font-weight-heavy;
-	}*/
-
-	/*a:hover, a:focus {
-		text-decoration: none;
-	}*/
-
-	
 	.content-container {
 		width: 92%;
 		margin: 0 auto;
@@ -73,6 +49,11 @@ body {
 		color: $lightpurple;
 	}
 
+}
+
+.touch strong {
+	font-family: helvetica,sans-serif;
+	font-weight: bold!important;
 }
 
 /*

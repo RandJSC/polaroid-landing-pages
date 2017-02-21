@@ -1,0 +1,47 @@
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#form {
+  display: none;
+  width: 600px!important;
+  max-width: 90%!important;
+  margin: 0 auto !important;
+  padding: 1.2em;
+  top: 50%!important;
+  left: 50%!important;
+  transform: translate(-50%, -50%)!important;
+}
+
+#mc_embed_signup form {
+  width: 100%;
+  padding: 8% 10% !important;
+}
+
+#mc_embed_signup .mc-field-group.input-group input {
+  margin-bottom: inherit;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul {
+  padding: 15px 0;
+}
+
+#mc_embed_signup input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    vertical-align: initial;
+}
+.checkboxes-list {
+  padding-left: 0!important;
+}
