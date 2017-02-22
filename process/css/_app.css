@@ -230,7 +230,7 @@ Banner seperates top and buttom section
 		background-position: 0 0;
 	}
 	.banner-printers .headline {
-		top: 6%!important;
+		/*top: 6%!important;*/
 	}
 
 }
