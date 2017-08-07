@@ -36,10 +36,15 @@
 /*--------------------------------------------------------------
 ## main-info
 --------------------------------------------------------------*/
-.row.cameras,
-.row.film {
-    display: flex;
-    flex-flow: row nowrap;
+@media screen and (min-width: 680px) {
+	.row.cameras,
+	.row.film {
+	    display: flex;
+	    flex-flow: row nowrap;
+	}
+	.row.film .pic {
+		order: 2;
+	}
 }
 
 .col.pic {
@@ -49,7 +54,20 @@
 /*--------------------------------------------------------------
 ## stats
 --------------------------------------------------------------*/
-
+.card-wrap {
+    display: block;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.card {
+    flex: 0 1 32%;
+    margin-bottom: 1em;
+}
+@media screen and (min-width: 520px) {
+	.card-wrap {
+	    display: flex;
+	}
+}
 
 
 

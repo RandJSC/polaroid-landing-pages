@@ -8,28 +8,29 @@ html {
 }
 
 body {
-  margin: 0;
+  /*margin: 0;
   padding: 0;
   color: $color-main;
   background-color: $color-background;
   font-family: $font-main;
   font-size: 1.8rem;
   line-height: 160%;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-normal;*/
+  min-width: auto;
 }
 
-.container {
+/*.container {
   width: $container-default-width;
   max-width: $container-max-width;
   margin: 0 auto;
-}
+}*/
 
-h1,h2,h3,h4,h5,h6 {
+/*h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: .7em;
   padding: 0;
-  /*font-family: $font-main;*/
-}
+  font-family: $font-main;
+}*/
 
 img {
   display: block;
