@@ -55,13 +55,15 @@
 
 }
 
-.touch .locations {
+/*.touch .locations {
 	margin: 0 0 0-1.2em;
-}
+}*/
 
 .touch .locations > div {
 	padding: 0 .8em 0 1.2em;
-	flex: 1 0 auto;
+	flex: 0 0 27%;
+	min-width: 220px;
+	margin-bottom: .6em;
 }
 .locations .line {
     padding: 0!important;
@@ -76,7 +78,7 @@
 	
 	.locations {
 		display: flex;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		max-width: 500px;
 		justify-content: flex-start;
 		/*margin: 0 -1em;*/
@@ -110,11 +112,11 @@
 	margin-bottom: 1.8em;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 520px) {
 	.locations {
 		display: flex;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	
 } 
