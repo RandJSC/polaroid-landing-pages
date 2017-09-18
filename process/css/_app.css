@@ -42,7 +42,7 @@
 }
 
 .flex-wrap {
-	max-width: 750px;
+	max-width: 850px;
 	margin: 0 auto;
 	width: 94%;
 
@@ -53,6 +53,12 @@
 
 	}
 
+}
+@media only screen and (max-width: 619px) {
+	#top .flex-wrap {
+		display: flex;
+	    flex-flow: column-reverse;
+	}
 }
 
 .touch .locations {
@@ -95,17 +101,17 @@
 		flex-wrap: nowrap;
 
 		.images-col {
-			max-width: 315px;
+			max-width: 365px;
 		}
 		.text-col {
-			width: calc(96% - 315px);
+			width: calc(96% - 365px);
 		}
 	}
 }
 
 @media only screen and (min-width: 680px) {
 	.flex-wrap .text-col {
-		width: calc(92% - 315px);
+		width: calc(94% - 365px);
 	}
 }
 
@@ -148,10 +154,12 @@ Banner seperates top and buttom section
 ----------------------------------------*/
 
 .banner-printers {
-	background: url('http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-printers-header-background-opt.jpg');
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3D-printers-header-FINAL.jpg);
 	background-size: cover;
+	background-position: 72% bottom;
 	background-repeat: no-repeat;
 	margin-bottom: 6%;
+	min-height: 251px;
 
 	.flex-wrap {
 		justify-content: space-between;
@@ -179,25 +187,30 @@ Banner seperates top and buttom section
 
 
 .banner-printers.pens {
-	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3D-pens-header-FINAL.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 68% bottom;
-	overflow: hidden;
-	position: relative;
-	height: 420px;
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3D-pens-header-FINAL-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 45% bottom;
+    overflow: hidden;
+    position: relative;
+    height: 310px;
 
 	.flex-wrap {
 		display: block;
 		width: 100%;
 		max-width: 900px;
 		overflow: hidden;
+		height: 100%;
+		position: relative;
 	}
 	
 	.headline {
 		align-self: flex-start;
-		padding: 0;
+		padding: 1em 0 0 0;
 		text-align: center;
+		position: absolute;
+		top: 63%;
+		left: 8%;
 	}
 	.pen-blue {
 		max-width: 145px;
@@ -217,7 +230,12 @@ Banner seperates top and buttom section
 	}
 
 }
+@media only screen and (min-width: 620px) {
+	.banner-printers {
+		min-height: 400px;
+	}
 
+}
 @media only screen and (max-width: 619px) {
 
 	.banner-printers {
@@ -234,10 +252,10 @@ Banner seperates top and buttom section
 
 .banner-printers .headline {
     color: white;
-    font-size: 2.7em;
+    font-size: 3em;
     font-family: MuseoSans-500,arial,helvetica,sans-serif;
     text-align: center;
-    padding: .3em 0;
+    padding: 1em 0 .3em;
 }
 
 .images-col .img-box {
