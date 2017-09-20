@@ -24,7 +24,7 @@
 		font-family: 'UniversLTPro-55Roman', arial, helvetica, sans-serif;
 		color: $textmain;
 		line-height: 1.5;
-		margin-bottom: 1em;
+		margin-bottom: 1.5em;
 		margin-top: 0; 
 	}
 	li {
@@ -63,15 +63,15 @@
 	width: 94%;
 
 	
-	.text-col > p:first-child {
+	/*.text-col > p:first-child {
 		color: $darkpurple;
 		font-weight: 1.0625em;
 
-	}
+	}*/
 
 }
 @media only screen and (max-width: 619px) {
-	#top .flex-wrap {
+	#top .flex-wrap, #bottom .flex-wrap {
 		display: flex;
 	    flex-flow: column-reverse;
 	}
@@ -144,10 +144,6 @@
 	
 } 
 
-#bottom .flex-wrap {
-		flex-direction: row-reverse;
-}
-
 
 /*
 .img-box {
@@ -174,7 +170,7 @@ Banner seperates top and buttom section
 	background-size: cover;
 	background-position: 72% bottom;
 	background-repeat: no-repeat;
-	margin-bottom: 6%;
+	margin-bottom: 2.5em;
 	/*min-height: 251px;*/
 
 	.flex-wrap {
@@ -196,13 +192,15 @@ Banner seperates top and buttom section
 	.img-box.pinter-blue {
 	    align-self: flex-end;
 	    padding-bottom: .4em;
-	    width: 49%;
+	    width: 450px;
+	    max-width: 95%!important;
+	    flex: 0 1 450px;
 	}
 
 }
 
 
-.banner-printers.pens {
+.banner-printers.printers, .banner-printers.pens {
 	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-3000_450.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,6 +292,20 @@ Banner seperates top and buttom section
 	}
 
 }
+.banner-printers.printers {
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-printers-header-bg.jpg);
+	background-size: cover!important;
+	background-repeat: no-repeat;
+	height: auto!important;
+	min-height: initial!important;
+	max-height: initial!important;
+}
+/*.banner-printers.pens {
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-3000_450.jpg);
+}
+.banner-printers.printers {
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-3000_450.jpg);
+}*/
 /*@media only screen and (min-width: 1600px) {
 	.banner-printers.pens {
 	    background-position: 21% bottom;
@@ -343,6 +355,7 @@ Banner seperates top and buttom section
 
 section#cta-0 {
     text-align: center;
+    padding-bottom: 4em;
 }
 
 section#cta-0 a {
@@ -354,4 +367,22 @@ section#cta-0 a {
 
 section#cta-0 a:hover {
     background: #d97b08;
+}
+
+/*Responsive Youtube Video*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+body.hero #main-content {
+    max-width: 100%;
 }

@@ -19,15 +19,16 @@
   width: 600px!important;
   max-width: 90%!important;
   margin: 0 auto !important;
-  padding: 1.2em;
   top: 50%!important;
   left: 50%!important;
   transform: translate(-50%, -50%)!important;
 }
-
+div#mc_embed_signup {
+    padding: 5% 7%!important;
+}
 #mc_embed_signup form {
   width: 100%;
-  padding: 8% 10% !important;
+  padding: 0!important;
 }
 
 #mc_embed_signup .mc-field-group.input-group input {
