@@ -39,6 +39,22 @@
 	span.nobr {
 		white-space: nowrap;
 	}
+	.content-container {
+		max-width: 850px;
+	}
+	a {
+		text-decoration: underline;
+		font-weight: initial;
+	}
+	a:hvoer {
+		font-weight: initial;
+	}
+	a.bttn {
+		text-decoration: none;
+	}
+	a.bttn:hover {
+		text-decoration: none;
+	}
 }
 
 .flex-wrap {
@@ -159,7 +175,7 @@ Banner seperates top and buttom section
 	background-position: 72% bottom;
 	background-repeat: no-repeat;
 	margin-bottom: 6%;
-	min-height: 251px;
+	/*min-height: 251px;*/
 
 	.flex-wrap {
 		justify-content: space-between;
@@ -187,13 +203,14 @@ Banner seperates top and buttom section
 
 
 .banner-printers.pens {
-	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3D-pens-header-FINAL-2.jpg);
+	background: url(http://cdn.agilitycms.com/polaroid/landing-pages/3d-pinters-pens/3d-pens-header-3000_450.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 45% bottom;
+    background-position: 50% bottom;
     overflow: hidden;
     position: relative;
-    height: 310px;
+    height: 45vw!important;
+    max-height: 400px!important;
 
 	.flex-wrap {
 		display: block;
@@ -206,11 +223,12 @@ Banner seperates top and buttom section
 	
 	.headline {
 		align-self: flex-start;
-		padding: 1em 0 0 0;
+		padding: 3.5% 0 0 0;
 		text-align: center;
-		position: absolute;
+		/*position: absolute;*/
 		top: 63%;
 		left: 8%;
+		font-size: 3rem;
 	}
 	.pen-blue {
 		max-width: 145px;
@@ -218,10 +236,56 @@ Banner seperates top and buttom section
     	bottom: 6%;
     	right: 0;
 	}
-	@media only screen and (max-width: 419px) {
+	@media only screen and (max-width: 600px) {
+		
+		.pen-blue {
+			max-width: 135px;
+		}
+		.banner-printers.pens {
+			max-height: 190px;
+			height: 40vw;
+		}
+
+	}
+	@media only screen and (min-width: 440px) {
 		.headline {
-			right: 0;
-			left: 0;
+			font-size: 3.8rem;
+		}
+
+	}
+	@media only screen and (min-width: 550px) {
+		.headline {
+			font-size: 4.2rem;
+		}
+
+	}
+	@media only screen and (min-width: 700px) {
+		.headline {
+			font-size: 4.5rem;
+		}
+
+	}
+	@media only screen and (min-width: 900px) {
+		.headline {
+			font-size: 4.75rem;
+		}
+		.pen-blue {
+			max-width: 135px;
+		}
+
+	}
+	@media only screen and (min-width: 1200px) {
+		.headline {
+			font-size: 5rem;
+		}
+		.pen-blue {
+			max-width: 135px;
+		}
+
+	}
+	@media only screen and (min-width: 1600px) {
+		.headline {
+			font-size: 5.5rem;
 		}
 		.pen-blue {
 			max-width: 135px;
@@ -230,12 +294,27 @@ Banner seperates top and buttom section
 	}
 
 }
+/*@media only screen and (min-width: 1600px) {
+	.banner-printers.pens {
+	    background-position: 21% bottom;
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.banner-printers.pens {
+	    background-position: 35% bottom;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.banner-printers.pens {
+	    background-position: 40% bottom;
+	}
+}
 @media only screen and (min-width: 620px) {
 	.banner-printers {
 		min-height: 400px;
 	}
 
-}
+}*/
 @media only screen and (max-width: 619px) {
 
 	.banner-printers {
@@ -260,4 +339,19 @@ Banner seperates top and buttom section
 
 .images-col .img-box {
     box-shadow: 0px 12px 16px -2px rgba(0, 0, 0, 0.22);
+}
+
+section#cta-0 {
+    text-align: center;
+}
+
+section#cta-0 a {
+    color: white;
+    background: hsla(33, 93%, 54%, 1);
+    border-radius: 12px;
+    transition: all .2s ease;
+}
+
+section#cta-0 a:hover {
+    background: #d97b08;
 }
