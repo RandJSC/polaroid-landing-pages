@@ -23,7 +23,7 @@
 }
 p.cta {
     font-size: 1.4rem;
-    font-family: 'MuseoSans-700', arial, helvetica, sans-serif;
+    font-family: MuseoSans-500,arial,helvetica,sans-serif;
     font-weight: bold;
     max-width: 550px;
     margin: 0 auto 2.25em;
@@ -31,7 +31,7 @@ p.cta {
 }
 a.cta.bttn {
     font-size: 1.35rem;
-    padding: .5em 1.4em;
+    padding: 1em 1.4em;
 
 }
 @media only screen and (min-width: 619px) {
@@ -66,7 +66,7 @@ div#subscribe-btn {
     div#subscribe-btn a {
         font-size: 1.375em;
         color: $goldyellow;
-        font-family: MuseoSans-700,arial,helvetica,sans-serif;
+        font-family: MuseoSans-500,arial,helvetica,sans-serif;
         font-weight: bold;
         text-decoration: none;
         display: flex;
